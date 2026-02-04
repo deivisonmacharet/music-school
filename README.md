@@ -2,7 +2,7 @@
 
 Sistema completo de gerenciamento para escola de música e orquestra, desenvolvido com React, Node.js, MySQL e Docker.
 
-## 🎵 Funcionalidades
+## Funcionalidades
 
 - **Autenticação**: Sistema de login com 3 níveis de acesso (Admin, Funcionário, Aluno)
 - **Gestão de Alunos**: Cadastro completo com dados pessoais e responsáveis
@@ -15,7 +15,7 @@ Sistema completo de gerenciamento para escola de música e orquestra, desenvolvi
 - **Relatórios**: Inadimplentes, frequência, receitas
 - **Responsivo**: Interface adaptada para mobile e desktop
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 ### Backend
 - Node.js 18
@@ -39,18 +39,18 @@ Sistema completo de gerenciamento para escola de música e orquestra, desenvolvi
 - Traefik (reverse proxy)
 - Nginx
 
-## 📋 Pré-requisitos
+## Pré-requisitos
 
 - Docker e Docker Compose instalados
 - Traefik configurado na sua VPS (se for usar em produção)
 - Domínios configurados (para produção)
 
-## 🚀 Instalação
+## Instalação
 
 ### 1. Clone o projeto
 
 ```bash
-git clone <seu-repositorio>
+git clone <end-repositorio>
 cd music-school
 ```
 
@@ -63,7 +63,7 @@ cp .env.example .env
 Edite o arquivo `.env` e configure:
 - `MYSQL_ROOT_PASSWORD`: Senha root do MySQL
 - `MYSQL_PASSWORD`: Senha do usuário do banco
-- `JWT_SECRET`: Chave secreta JWT (mínimo 32 caracteres)
+- `JWT_SECRET`: Chave secreta JWT
 - `APP_DOMAIN`: Seu domínio principal (ex: musicschool.com.br)
 - `API_DOMAIN`: Domínio da API (ex: api.musicschool.com.br)
 
@@ -105,9 +105,9 @@ O Traefik irá automaticamente:
 - Email: `admin@musicschool.com`
 - Senha: `admin123`
 
-⚠️ **IMPORTANTE**: Altere a senha padrão após o primeiro acesso!
+**IMPORTANTE**: Altere a senha padrão após o primeiro acesso!
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 music-school/
@@ -135,7 +135,7 @@ music-school/
 └── .env.example
 ```
 
-## 🔑 Papéis e Permissões
+## Papéis e Permissões
 
 ### Admin
 - Acesso total ao sistema
@@ -154,7 +154,7 @@ music-school/
 - Verificação de pagamentos
 - Consulta de eventos
 
-## 📊 API Endpoints
+## API Endpoints
 
 ### Autenticação
 - `POST /api/auth/login` - Login
@@ -254,7 +254,7 @@ docker exec music-school-db mysqldump -u root -p music_school > backup.sql
 docker exec -i music-school-db mysql -u root -p music_school < backup.sql
 ```
 
-## 🛡️ Segurança
+## Segurança
 
 - Todas as senhas são hasheadas com bcrypt
 - JWT com expiração configurável
@@ -263,7 +263,7 @@ docker exec -i music-school-db mysql -u root -p music_school < backup.sql
 - CORS configurado
 - Validação de dados em todas as rotas
 
-## 📝 TODO / Próximas Implementações
+## TODO / Próximas Implementações
 
 - [ ] Upload de documentos dos alunos
 - [ ] Sistema de mensagens/notificações
@@ -273,14 +273,14 @@ docker exec -i music-school-db mysql -u root -p music_school < backup.sql
 - [ ] App mobile nativo
 - [ ] Backup automático do banco de dados
 
-## 🤝 Contribuindo
+## Contribuindo
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
-## 📄 Licença
+## Licença
 
 MIT
 
-## 👨‍💻 Autor
+## Autor
 
-Desenvolvido para gerenciamento de escolas de música e orquestras.
+Desenvolvido por Deivison Macharete (DeivTech).
